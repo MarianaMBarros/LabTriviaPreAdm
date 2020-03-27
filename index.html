@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Trivia</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+    <div id="tela-inicial" style="margin-top: 20%">
+      <h1>Bem Vindo ao Trivia</h1>
+      <h4>Criado por: Mariana</h4>
+
+      <div class="centralizar">
+        <button onclick="enterGame()"
+                type="button"
+                name="button">Entrar</button>   
+      </div>
+    </div>
+
+    <div id="tela-tema" class="hide" style="margin-top: 20%">
+      <h1> Bem Vindo <span style="text-decoration: underline; font-size: 54px; text-transform: uppercase;" id="nome-usuario"></span> Ao Jogo Trivia</h1>
+      <h2>Escolha O Tema Que Deseja Jogar</h2>
+      <div class="centralizar">
+      <button onclick="gameFilme()"
+              type="button"
+              name="button">Filme</button>
+      <button onclick="gameSerie()"
+              type="button"
+              name="button">Serie</button>
+      </div>
+    </div>
+
+    <div id="tela-respostas-filme" class="hide">
+      <h1>Resultado</h1>
+
+      <div>
+          <h3>1- Qual o filme com a maior bilheteria da história cinematografica?</h3>
+          <span id="respFilme1A"><input disabled="disabled" type="radio" name="respFilme2" value="a"> A) Titanic</span><br>
+          <span id="respFilme1B"><input disabled="disabled" type="radio" name="respFilme2" value="b"> B) Os Vingadores</span><br>
+          <span id="respFilme1C"><input disabled="disabled" type="radio" name="respFilme2" value="c" checked="true"> C) Avatar</span><br><br><br>
+          <p id="respFilme1"></p>
+      </div>
+
+      <div>
+          <h3>2- Qual saga de livros que virou filme tem como personagens bruxos?</h3>
+          <span id="respFilme2A"><input disabled="disabled" type="radio" name="respFilme1" value="a"> A) Jogos Vorazes</span><br>
+          <span id="respFilme2B"><input disabled="disabled" type="radio" name="respFilme1" value="b" checked="true"> B) Harry Potter</span><br>
+          <span id="respFilme2C"><input disabled="disabled" type="radio" name="respFilme1" value="c"> C) As Cronicas de Narnia</span><br><br><br>
+          <p id="respFilme2"></p>
+      </div>
+
+
+
+      <div>
+          <h3>3- Qual filme tem como trilha sonora a musica 'Over the Rainbow'?</h3>
+          <span id="respFilme3A"><input disabled="disabled" type="radio" name="respFilme3" value="a" checked="true"> A) O Mágico de Oz</span><br>
+          <span id="respFilme3B"><input disabled="disabled" type="radio" name="respFilme3" value="b"> B) O Vento Levou</span><br>
+          <span id="respFilme3C"><input disabled="disabled" type="radio" name="respFilme3" value="c"> C) O Passaro Azul</span><br><br><br>
+          <p id="respFilme3"></p>
+      </div>
+
+      <div class="centralizar">
+      <button onclick="voltarTelaTema()"
+              type="button"
+              name="button">Jogar Novamente</button>
+
+      <button onclick="sair()"
+              type="button"
+              name="button">Sair</button>
+      </div>
+    </div>
+
+    <div id="tela-respostas-serie" class="hide">
+      <h1>Resultado</h1>
+      <div>
+          <h3>1- Qual o seriado com mais temporadas da história?</h3>
+          <span id="respSerie1A"><input disabled="disabled" type="radio" name="resp" value="a"> A) Doctor Who</span><br>
+          <span id="respSerie1B"><input disabled="disabled" type="radio" name="resp" value="b" checked="true"> B) Vila Sesamo</span><br>
+          <span id="respSerie1C"><input disabled="disabled" type="radio" name="resp" value="c"> C) Os Simpsons</span><br><br><br>
+          <p id="respSerie1"></p>
+      </div>
+
+      <div>
+          <h3>2- Qual série tem um personagem chamado Sheldon?</h3>
+          <span id="respSerie2A"><input disabled="disabled" type="radio" name="resp" value="a" checked="true"> A) The big bang theory</span><br>
+          <span id="respSerie2B"><input disabled="disabled" type="radio" name="resp" value="b"> B) Flash</span><br>
+          <span id="respSerie2C"><input disabled="disabled" type="radio" name="resp" value="c"> C) Lost</span><br><br><br>
+          <p id="respSerie2"></p>
+      </div>
+
+      <div>
+          <h3>3- Onde se passa a serie 'Sexy and the city'?</h3>
+          <span id="respSerie3A"><input disabled="disabled" type="radio" name="resp" value="a"> A) Paris</span><br>
+          <span id="respSerie3B"><input disabled="disabled" type="radio" name="resp" value="b"> B) Roma</span><br>
+          <span id="respSerie3C"><input disabled="disabled" type="radio" name="resp" value="c" checked="true"> C) Nova York</span><br><br><br>
+          <p id="respSerie3"></p>
+      </div>
+
+      <div class="centralizar">
+      <button onclick="voltarTelaTema()"
+              type="button"
+              name="button">Jogar Novamente</button>
+      <button onclick="sair()"
+              type="button"
+              name="button">Sair</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+/* esconde bloco de informações*/
+.hide{
+  display: none;
+}
+
+/* exibe bloco de informações*/
+.show{
+  display: block;
+}
+
+h1 {
+    color: #191970;
+    font-size: 50px ;
+    font-style:italic;
+    font-family: Courier, monospace;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+h2,h4{
+  color: #000080;
+  font-size: 20px ;
+  font-style:italic;
+  font-family: Courier, monospace;
+  margin-top: 0;
+  text-align: center;
+}
+
+.centralizar{text-align: center;}
+
+button{
+   width: 350px;
+   color:#0000CD;
+   text-align: center;
+   font-size: 50px ;
+   font-family: Courier, monospace;
+   padding: 15px 20px;
+   border-radius: 6px;
+   background-color: #ADD8E6;
+   font-size: 18px;
+ }
+
+ body{
+    background-image: url("imagemFundo.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+ }
+
+  .correta{
+    color: #32CD32;
+  }
+
+  .incorreta{
+    color:#FF0000;
+  }
