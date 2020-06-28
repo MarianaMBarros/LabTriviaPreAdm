@@ -1,7 +1,7 @@
 # Projeto Pré-Admissão Laboratória
 
 ## 1. Resumo do Projeto
- Desolvolver um Trivia onde o usuario possa escolher o game que deseja jogar. 
+ Desolvolver um Trivia onde o usuário possa escolher o game que deseja jogar. 
 
 ## 2. Considerações técnicas
 
